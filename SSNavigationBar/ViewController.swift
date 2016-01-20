@@ -19,7 +19,7 @@ class ViewController: UIViewController , UITableViewDelegate , UITableViewDataSo
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         
-        self.navigationController!.navigationBar.setBarBackgroundColor(UIColor.clearColor())
+        self.navigationController!.navigationBar.SS_setBarBackgroundColor(UIColor.clearColor())
 
         //复位
         self.navigationItem.setRightBarButtonItem(UIBarButtonItem(title: "复位", style: .Done, target: self.navigationController!.navigationBar, action: "reset"), animated: true)
@@ -59,20 +59,20 @@ class ViewController: UIViewController , UITableViewDelegate , UITableViewDataSo
         
         //设置偏移
 //        self.navigationController!.navigationBar.setContentY(-20 - value)
-        self.navigationController!.navigationBar.setBarHeight(44 - value)
+        self.navigationController!.navigationBar.SS_setBarHeight(44 - value)
         //titleView偏移
         self.navigationItem.titleView?.bounds = CGRect(x: 0, y: value, width: 100, height: 20)
         //左右按钮位置偏移
-        self.navigationController!.navigationBar.setButtonItemElementsContentY(value)
+        self.navigationController!.navigationBar.SS_setButtonItemElementsContentY(value)
         
         //titleView透明度
         self.navigationItem.titleView?.alpha = 1 - tool.intervalProportion(206, end: 250, now: scrollView.contentOffset.y)
         //左右按钮透明度
-        self.navigationController!.navigationBar.setButtonItemElementsAlpha(1 - tool.intervalProportion(206, end: 250, now: scrollView.contentOffset.y))
+        self.navigationController!.navigationBar.SS_setButtonItemElementsAlpha(1 - tool.intervalProportion(206, end: 250, now: scrollView.contentOffset.y))
         
         
         let offsetY = scrollView.contentOffset.y / 200
-        self.navigationController!.navigationBar.setBarBackgroundColor(UIColor.orangeColor().colorWithAlphaComponent(offsetY))
+        self.navigationController!.navigationBar.SS_setBarBackgroundColor(UIColor.orangeColor().colorWithAlphaComponent(offsetY))
     }
     
     func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
