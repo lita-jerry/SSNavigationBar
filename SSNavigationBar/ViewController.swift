@@ -22,7 +22,7 @@ class ViewController: UIViewController , UITableViewDelegate , UITableViewDataSo
         self.navigationController!.navigationBar.SS_setBarBackgroundColor(UIColor.clearColor())
 
         //复位
-        self.navigationItem.setRightBarButtonItem(UIBarButtonItem(title: "复位", style: .Done, target: self.navigationController!.navigationBar, action: "reset"), animated: true)
+        self.navigationItem.setRightBarButtonItem(UIBarButtonItem(title: "复位", style: .Done, target: self.navigationController!.navigationBar, action: "SS_reset"), animated: true)
         self.navigationItem.rightBarButtonItem!.tintColor = UIColor.whiteColor()
         
         
