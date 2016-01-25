@@ -26,11 +26,11 @@ extension UINavigationBar
                 view!.userInteractionEnabled = false
                 
                 //如果做屏幕旋转，请自行优化
-//                view!.autoresizingMask = [.FlexibleWidth , .FlexibleHeight]
+                //                view!.autoresizingMask = [.FlexibleWidth , .FlexibleHeight]
                 
                 self.insertSubview(view!, atIndex: 0)
             }
-            
+            self.SS_backView = view!
             return view!
             
         }
@@ -45,7 +45,7 @@ extension UINavigationBar
      
      - parameter color: UIColor
      */
-    func setBarBackgroundColor (color : UIColor) {
+    func SS_setBarBackgroundColor (color : UIColor) {
         self.SS_backView.backgroundColor = color
     }
     
@@ -56,7 +56,7 @@ extension UINavigationBar
      
      - parameter value: height value
      */
-    func setBarHeight (value : CGFloat) {
+    func SS_setBarHeight (value : CGFloat) {
         self.SS_backView.removeFromSuperview()
         
         self.SS_backView = UIView(frame: CGRect(x: 0, y: -20, width: UIScreen.mainScreen().bounds.width, height: value + 20))
@@ -70,7 +70,7 @@ extension UINavigationBar
      
      - parameter alphaValue: alpha value
      */
-    func setButtonItemElementsAlpha (alphaValue : CGFloat) {
+    func SS_setButtonItemElementsAlpha (alphaValue : CGFloat) {
         
         self.valueForKey("_leftViews")?.enumerateObjectsUsingBlock({ (view, _, _) -> Void in
             (view as! UIView).alpha = alphaValue
@@ -93,7 +93,7 @@ extension UINavigationBar
      
      - parameter contentY: contentY value
      */
-    func setButtonItemElementsContentY (contentY : CGFloat) {
+    func SS_setButtonItemElementsContentY (contentY : CGFloat) {
         
         self.valueForKey("_leftViews")?.enumerateObjectsUsingBlock({ (view, _, _) -> Void in
             let view = view as! UIView
@@ -122,7 +122,7 @@ extension UINavigationBar
     /**
      复位
      */
-    func reset () {
+    func SS_reset () {
         self.setBackgroundImage(nil, forBarMetrics: .Default)
         self.SS_backView.removeFromSuperview()
     }

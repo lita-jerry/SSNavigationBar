@@ -26,11 +26,11 @@ extension UINavigationBar
                 view!.userInteractionEnabled = false
                 
                 //如果做屏幕旋转，请自行优化
-//                view!.autoresizingMask = [.FlexibleWidth , .FlexibleHeight]
+                //                view!.autoresizingMask = [.FlexibleWidth , .FlexibleHeight]
                 
                 self.insertSubview(view!, atIndex: 0)
             }
-            
+            self.SS_backView = view!
             return view!
             
         }
