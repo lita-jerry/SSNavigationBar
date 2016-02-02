@@ -26,7 +26,7 @@ extension UINavigationBar
                 view!.userInteractionEnabled = false
                 
                 //如果做屏幕旋转，请自行优化
-                //                view!.autoresizingMask = [.FlexibleWidth , .FlexibleHeight]
+                view!.autoresizingMask = [.FlexibleWidth , .FlexibleHeight]
                 
                 self.insertSubview(view!, atIndex: 0)
             }
@@ -57,11 +57,9 @@ extension UINavigationBar
      - parameter value: height value
      */
     func SS_setBarHeight (value : CGFloat) {
-        self.SS_backView.removeFromSuperview()
-        
-        self.SS_backView = UIView(frame: CGRect(x: 0, y: -20, width: UIScreen.mainScreen().bounds.width, height: value + 20))
-        
-        self.insertSubview(self.SS_backView, atIndex: 0)
+        var viewBounds = self.SS_backView.frame
+        viewBounds.origin.y = -20 + value - 64
+        self.SS_backView.frame = viewBounds
     }
     
     

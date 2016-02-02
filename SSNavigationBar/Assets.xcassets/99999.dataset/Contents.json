@@ -6,7 +6,8 @@
   "data" : [
     {
       "idiom" : "universal",
-      "filename" : "99999.gif"
+      "filename" : "ssnvbar.gif",
+      "universal-type-identifier" : "com.compuserve.gif"
     }
   ]
 }
