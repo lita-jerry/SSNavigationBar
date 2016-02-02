@@ -74,7 +74,7 @@ extension UINavigationBar
             (view as! UIView).alpha = alphaValue
         })
         
-        self.valueForKey("_leftViews")?.enumerateObjectsUsingBlock({ (view, _, _) -> Void in
+        self.valueForKey("_rightViews")?.enumerateObjectsUsingBlock({ (view, _, _) -> Void in
             (view as! UIView).alpha = alphaValue
         })
         
@@ -94,17 +94,17 @@ extension UINavigationBar
     func SS_setButtonItemElementsContentY (contentY : CGFloat) {
         
         self.valueForKey("_leftViews")?.enumerateObjectsUsingBlock({ (view, _, _) -> Void in
-            let view = view as! UIView
-            var bounds = view.bounds
+            let leftView = view as! UIView
+            var bounds = leftView.bounds
             bounds.origin.y = contentY
-            view.bounds = bounds
+            leftView.bounds = bounds
         })
         
-        self.valueForKey("_leftViews")?.enumerateObjectsUsingBlock({ (view, _, _) -> Void in
-            let view = view as! UIView
+        self.valueForKey("_rightViews")?.enumerateObjectsUsingBlock({ (view, _, _) -> Void in
+            let rightView = view as! UIView
             var bounds = view.bounds
             bounds.origin.y = contentY
-            view.bounds = bounds
+            rightView.bounds = bounds
         })
         
         //取消注释可以改变titleView的bounds

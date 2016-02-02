@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E84A4ADA1C603E0500011291 /* FirstTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84A4AD91C603E0500011291 /* FirstTableViewController.swift */; };
+		E84A4ADC1C60415C00011291 /* SecondTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84A4ADB1C60415C00011291 /* SecondTableViewController.swift */; };
+		E84A4ADE1C6058C700011291 /* zhihuDailyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84A4ADD1C6058C700011291 /* zhihuDailyViewController.swift */; };
 		E8633D6D1C4E2C35009070B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8633D6C1C4E2C35009070B6 /* AppDelegate.swift */; };
-		E8633D6F1C4E2C35009070B6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8633D6E1C4E2C35009070B6 /* ViewController.swift */; };
 		E8633D721C4E2C35009070B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8633D701C4E2C35009070B6 /* Main.storyboard */; };
 		E8633D741C4E2C35009070B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8633D731C4E2C35009070B6 /* Assets.xcassets */; };
 		E8633D771C4E2C35009070B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8633D751C4E2C35009070B6 /* LaunchScreen.storyboard */; };
@@ -18,9 +20,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E84A4AD91C603E0500011291 /* FirstTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstTableViewController.swift; sourceTree = "<group>"; };
+		E84A4ADB1C60415C00011291 /* SecondTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondTableViewController.swift; sourceTree = "<group>"; };
+		E84A4ADD1C6058C700011291 /* zhihuDailyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = zhihuDailyViewController.swift; sourceTree = "<group>"; };
 		E8633D691C4E2C35009070B6 /* SSNavigationBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SSNavigationBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8633D6C1C4E2C35009070B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E8633D6E1C4E2C35009070B6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E8633D711C4E2C35009070B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E8633D731C4E2C35009070B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E8633D761C4E2C35009070B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -60,9 +64,11 @@
 		E8633D6B1C4E2C35009070B6 /* SSNavigationBar */ = {
 			isa = PBXGroup;
 			children = (
+				E84A4AD91C603E0500011291 /* FirstTableViewController.swift */,
+				E84A4ADB1C60415C00011291 /* SecondTableViewController.swift */,
+				E84A4ADD1C6058C700011291 /* zhihuDailyViewController.swift */,
 				E8633D801C4E2CD9009070B6 /* SSNavigationBar.swift */,
 				E8633D6C1C4E2C35009070B6 /* AppDelegate.swift */,
-				E8633D6E1C4E2C35009070B6 /* ViewController.swift */,
 				E8633D7E1C4E2CB4009070B6 /* tool.swift */,
 				E8633D701C4E2C35009070B6 /* Main.storyboard */,
 				E8633D821C4E2D4A009070B6 /* MainContentTitleView.xib */,
@@ -146,9 +152,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8633D7F1C4E2CB4009070B6 /* tool.swift in Sources */,
-				E8633D6F1C4E2C35009070B6 /* ViewController.swift in Sources */,
+				E84A4ADC1C60415C00011291 /* SecondTableViewController.swift in Sources */,
 				E8633D6D1C4E2C35009070B6 /* AppDelegate.swift in Sources */,
+				E84A4ADE1C6058C700011291 /* zhihuDailyViewController.swift in Sources */,
 				E8633D811C4E2CD9009070B6 /* SSNavigationBar.swift in Sources */,
+				E84A4ADA1C603E0500011291 /* FirstTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +268,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SSNavigationBar/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "github.com-SSshare.SSNavigationBar";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -271,6 +280,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SSNavigationBar/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "github.com-SSshare.SSNavigationBar";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -296,6 +306,7 @@
 				E8633D7D1C4E2C35009070B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
